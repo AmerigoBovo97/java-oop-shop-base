@@ -19,6 +19,10 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    public Prodotto(String nome, String descrizione, double prezzo){
+        this(nome, descrizione, prezzo, 22);
+    }
+
 
     public static int codiceRandomGenerator() {
         Random generator = new Random();
@@ -28,6 +32,11 @@ public class Prodotto {
 
     public String priceDisplayer(){
         String result = "il prezzo base è " + this.prezzo;
+        return result;
+    }
+
+    public String ivaPriceDisplayer(){
+        String result = "il prezzo compreso di iva è " + (this.prezzo + (this.prezzo * this.iva / 100));
         return result;
     }
 
