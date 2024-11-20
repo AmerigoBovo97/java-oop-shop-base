@@ -26,4 +26,9 @@ public class Prodotto {
         return codiceRandom;
     }
 
+    public String priceDisplayer(){
+        String result = "il prezzo base è " + this.prezzo;
+        return result;
+    }
+
 }
