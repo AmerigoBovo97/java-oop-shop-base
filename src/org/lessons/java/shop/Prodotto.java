@@ -36,7 +36,8 @@ public class Prodotto {
     }
 
     public String ivaPriceDisplayer(){
-        String result = "il prezzo compreso di iva è " + (this.prezzo + (this.prezzo * this.iva / 100));
+        double finalPrice = Math.round((this.prezzo + (this.prezzo * this.iva / 100)) * 100.0) / 100.0;
+        String result = "il prezzo compreso di iva è " + finalPrice;
         return result;
     }
 
