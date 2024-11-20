@@ -7,6 +7,7 @@ public class App {
         System.out.println(product1.codice + product1.descrizione + product1.iva);
         System.out.println(product1.priceDisplayer());
         System.out.println(product1.ivaPriceDisplayer());
+        System.out.println(product1.extendedName());
 
     }
 }

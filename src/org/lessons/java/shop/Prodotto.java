@@ -40,4 +40,9 @@ public class Prodotto {
         return result;
     }
 
+    public String extendedName(){
+        String name = this.codice + "-" + this.nome;
+        return name;
+    }
+
 }
